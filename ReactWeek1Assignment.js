@@ -14,3 +14,11 @@ const Bootcamp {
     }
 }
 
+function registerStudent(studentToRegister) {
+    if ( Bootcamp.students.includes(studentToRegister)) {
+        console.log("This email has already been registered.");
+    } else {
+        Bootcamp.students.push(studentToRegister);
+    }
+}
+
