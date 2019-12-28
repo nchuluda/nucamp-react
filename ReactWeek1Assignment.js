@@ -19,7 +19,7 @@ class Bootcamp {
         this.students.push(studentToRegister.email);
         console.log(`Registering neo@matrix.com to the bootcamp for Web Dev fundamentals. `)
     }
-    return Bootcamp.students;
+    return fullStack.students;
     }
 }
 
