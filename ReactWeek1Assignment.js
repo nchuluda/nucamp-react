@@ -14,10 +14,10 @@ class Bootcamp {
     }
     registerStudent(studentToRegister) {
     if ( this.students.includes(studentToRegister.email)) {
-        console.log("This email has already been registered.");
+        console.log(`${studentToRegister.email} has already been registered.`);
     } else {
         this.students.push(studentToRegister.email);
-        console.log(`Registering neo@matrix.com to the bootcamp for Web Dev fundamentals. `)
+        console.log(`Registering ${studentToRegister.email} to the bootcamp for Web Dev fundamentals. `)
     }
     return fullStack.students;
     }
@@ -28,7 +28,6 @@ const student2 = new Student("Charles", "charles@gmail.com", "ONCE");
 const student3 = new Student("Minae", "charles@gmail.com", "ONCE");
 
 const fullStack = new Bootcamp("Full Stack Web and Mobile Development", "Advanced");
-
 
 
 
