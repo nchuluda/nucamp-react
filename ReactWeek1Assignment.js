@@ -13,19 +13,22 @@ class Bootcamp {
         this.students = students;
     }
     registerStudent(studentToRegister) {
-    if ( Bootcamp.students.includes(studentToRegister)) {
+    if ( this.students.includes(studentToRegister)) {
         console.log("This email has already been registered.");
     } else {
-        Bootcamp.students.push(studentToRegister);
-        console.log(`Registering ${this.email} to the bootcamp for Web Dev fundamentals. `)
+        this.students.push(studentToRegister.email);
+        console.log(`Registering neo@matrix.com to the bootcamp for Web Dev fundamentals. `)
     }
     return Bootcamp.students;
     }
 }
 
-let student1 = new Student("David", "david@gmail.com", "ONCE");
-let student2 = new Student("Charles", "charles@gmail.com", "ONCE");
-let student3 = new Student("Minae", "minae@gmail.com", "ONCE");
+const student1 = new Student("David", "david@gmail.com", "ONCE");
+const student2 = new Student("Charles", "charles@gmail.com", "ONCE");
+const student3 = new Student("Minae", "charles@gmail.com", "ONCE");
+
+const fullStack = new Bootcamp("Full Stack Web and Mobile Development", "Advanced");
+
 
 
 
